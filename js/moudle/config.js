@@ -1,0 +1,31 @@
+define(
+[
+
+],
+function(){
+	return {
+		baseUrl:"js",
+		paths:{
+			"jquery":"lib/jquery/jquery",
+			"mock":"lib/mock/mock",
+			"index":"moudle/index",
+			//全局js
+			"globalChannel":"apps/channel/globalChannel",
+			//首页js
+			"indexChannel":"apps/channel/indexChannel",
+			//首页js调用的ajax
+            "indexModel":"apps/models/index",
+            "listChannel":"apps/channel/listChannel",
+			//首页js调用的ajax
+            "listModel":"apps/models/list",
+            "globalModel":"apps/models/global",
+            "data":"apps/data",
+			"tool":"apps/tool"
+		},
+		shim:{
+			"jquery":{
+				"exports":"$"
+			}
+		}
+	}
+});
