@@ -10,12 +10,13 @@ Front Automation 是一款前端自动化框架以及组建
 <li>vue.js (MVVM,angular.js简洁版，但不兼容IE9及以下)</li>
 <li>tmod.js (通过node.js +tmod.js将公共部分静态页面引入，实现高效率的代码模式)</li>
 <li>mock.js (模拟后端发送的数据，让前端优于后端现行) </li>
-<li>gulp (目前只用了该功能的watch模式用来编写代码保存即刷新页面)</li>
+<li>gulp browser-sync(目前只用了watch模式用来编写代码保存即刷新页面)</li>
 </ul>
 
 # Direction
 <p>tmod => tmod ./tpl --output ./build OR watch.bat(当前页面下的文件夹)</p>
 <p>gulp => gulp (当前页面执行)</p>
+<p>npm init 安装执行package.json</p>
 
 # Practical
 <p>适用与大中型网站，电子商务系统 金融系统等</p>
@@ -24,3 +25,4 @@ Front Automation 是一款前端自动化框架以及组建
 #License
 <a href="http://wuzuoyi.com">about me</a><br/>
 Copyright (c) 2011-2016 Mr.Z(QQ:953043100)
+
