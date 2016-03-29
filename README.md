@@ -1,4 +1,4 @@
-<p><img src="http://wuzuoyi.com/logo.png"></p>
+<p><img src="http://wuzuoyi.com/123.png"></p>
 # About Front Automation
 Front Automation 是一款前端自动化框架以及组建
 
