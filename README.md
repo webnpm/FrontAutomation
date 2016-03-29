@@ -18,7 +18,7 @@ Front Automation 是一款前端自动化框架以及组建
 <p>gulp => gulp (当前页面执行)</p>
 
 # Practical
-<p>试用与大中型网站，电子商务系统 金融系统等</p>
+<p>适用与大中型网站，电子商务系统 金融系统等</p>
 
 
 #License
