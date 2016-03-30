@@ -1,2 +1,2 @@
-/*TMODJS:{"version":7,"md5":"d645e1fc44a664b2993291e12b5cb967"}*/
-template('common/footer','<div id="footer"> 这是尾部sssaaaadadadsfsfsff </div>');
+/*TMODJS:{"version":10,"md5":"25b26c5794273a030f5aed14ba2764a8"}*/
+template('common/footer','<div id="footer"> 这是尾部sww </div>');

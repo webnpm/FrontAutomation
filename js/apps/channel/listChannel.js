@@ -1,15 +1,9 @@
-define(['jquery'] ,function($){
+define(['angular'] ,function(){
 	var ListChannel={
 		init:function(){
-			var that=this,
-				container=$('.list');
-				that.demo(container);
-		},
-		demo:function(container){
-			container.find('#div').click(function(){
-				alert('列表页')
-			})
-			
+			angular.module('myApp',[]).controller('mainCtrl',['$scope',function($scope){
+			      $scope.mes = '12eeeAsfsfsfsaadaddDAD';
+			}])
 		}
 	};
 

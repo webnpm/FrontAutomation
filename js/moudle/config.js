@@ -7,6 +7,7 @@ function(){
 		baseUrl:"js",
 		paths:{
 			"jquery":"lib/jquery/jquery",
+			"angular":"lib/angular/angular",
 			"mock":"lib/mock/mock",
 			"index":"moudle/index",
 			//全局js
@@ -25,7 +26,10 @@ function(){
 		shim:{
 			"jquery":{
 				"exports":"$"
-			}
+			},
+			"angular":{
+	            exports:"angular"
+	        }
 		}
 	}
 });
