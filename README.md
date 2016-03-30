@@ -16,7 +16,8 @@ Front Automation 是一款前端自动化框架以及组建
 # Direction
 <p>tmod => tmod ./tpl --output ./build OR watch.bat(当前页面下的文件夹)</p>
 <p>gulp => gulp (当前页面执行)</p>
-<p>npm init 安装执行package.json</p>
+<p>npm init 新建package.json</p>
+<p>npm install 安装执行package.json</p>
 
 # Practical
 <p>适用与大中型网站，电子商务系统 金融系统等</p>
