@@ -7,14 +7,22 @@
 	<script src=http://wuzuoyi.com/JQ/jquery-1.8.1.js></script>
 </head>
 <body>
-	<div id="main"></div>
-	<script src="build/template.js"></script>
-	<script>
-		var data = {};
-	    document.getElementById('main').innerHTML = template('list',data);
-	    //$('#main').html(template('list',data))
-	</script>
-	
+		<header>
+		这里是头部信aad
+	</header>
+	<div id="identify"  identify="list" class="list" ng-app="myApp" ng-controller="mainCtrl">
+		<div id="div" class="div">
+			<button ng-click="getData()">按钮</button>
+			<ul ng-repeat="data in datas">
+				<li>
+					<input type="text" ng-model="data.names">
+				</li>
+			</ul>
+		</div>
+	</div>
+		<div id="footer">
+		这是尾部swwsfsfsfsfsfsffsgsgsgd
+	</div>
 </body>
 </html>
 <script type="text/javascript" src="js/init.js"></script>

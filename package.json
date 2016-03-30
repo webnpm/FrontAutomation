@@ -1,22 +1,23 @@
 {
   "name": "fbfront",
   "version": "1.0.0",
-  "description": "descript demo ",
+  "description": "this is fbfront ",
   "main": "gulpfile.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
     "browser-sync": "^2.11.2",
+    "gulp-htmlincluder": "^0.1.0",
     "gulp": "^3.9.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "123"
+    "test": "demo"
   },
   "keywords": [
-    "1234"
+    "QQ953043100"
   ],
-  "author": "jquery",
+  "author": "Mr.Z",
   "license": "ISC"
 }
