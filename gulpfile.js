@@ -2,6 +2,8 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var includer = require('gulp-htmlincluder');
 var reload = browserSync.reload;
+var less = require('gulp-less');
+var path = require('path');
 
 // 静态服务器
 gulp.task('browser-sync', function() {
@@ -10,9 +12,14 @@ gulp.task('browser-sync', function() {
             baseDir: "./"
         }
     });
-    gulp.watch(['*.html','js/**/*.js']).on("change", function() {
+    gulp.watch(['*.html','js/**/*.js','css/**/*.css']).on("change", function() {
         reload();
     })
+});
+gulp.task('less', function () {
+  gulp.src('css/**/*.less')
+    .pipe(less())
+    .pipe(gulp.dest('css'));
 });
 gulp.task('htmlIncluder', function() {
     gulp.src('tpl/*.html')
@@ -21,10 +28,10 @@ gulp.task('htmlIncluder', function() {
 });
  
 gulp.task('watch', function() {
-    gulp.watch(['tpl/*.html'], function(event) {
+    gulp.watch(['tpl/*.html','css/**/*.less'], function(event) {
       gulp.start('default');
     });
 });
 
-gulp.task('default',['htmlIncluder','watch','browser-sync']);
+gulp.task('default',['less','htmlIncluder','watch']);
 

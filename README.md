@@ -22,9 +22,8 @@ Front Automation 是一款前端自动化框架以及组建
 # Direction V2.0
 <p><del>tmod => tmod ./tpl --output ./build OR watch.bat(当前页面下的文件夹)</del></p>
 <p>页面采用gulp-htmlincluder对公共部分进行包含，效率更好</p>
-<p>gulp => gulp (当前页面执行)</p>
-<p>npm init 新建package.json</p>
-<p>npm install 安装执行package.json</p>
+# Direction V2.1
+<p>新增less保存立即编译成css，无需编辑器安装插件</p>
 
 # Practical
 <p>适用与大中型网站，电子商务系统 金融系统等</p>
