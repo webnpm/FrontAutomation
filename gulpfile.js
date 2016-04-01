@@ -12,9 +12,9 @@ gulp.task('browser-sync', function() {
             baseDir: "./"
         }
     });
-    gulp.watch(['*.html','js/**/*.js','css/**/*.css']).on("change", function() {
-        reload();
-    })
+    // gulp.watch(['*.html','js/**/*.js','css/**/*.css']).on("change", function() {
+    //     reload();
+    // })
 });
 gulp.task('less', function () {
   gulp.src('css/**/*.less')
@@ -29,9 +29,15 @@ gulp.task('htmlIncluder', function() {
  
 gulp.task('watch', function() {
     gulp.watch(['tpl/*.html','css/**/*.less'], function(event) {
-      gulp.start('default');
+       gulp.src('css/**/*.less')
+    .pipe(less())
+    .pipe(gulp.dest('css'));
+      gulp.src('tpl/*.html')
+        .pipe(includer())
+        .pipe(gulp.dest(''));
+       reload();
     });
 });
 
-gulp.task('default',['less','htmlIncluder','watch']);
+gulp.task('default',['browser-sync','watch']);
 
