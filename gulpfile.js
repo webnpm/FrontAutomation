@@ -35,7 +35,10 @@ gulp.task('watch', function() {
       gulp.src('tpl/*.html')
         .pipe(includer())
         .pipe(gulp.dest(''));
-       reload();
+       
+    });
+    gulp.watch(['*.html','css/**/*.css'], function(event) {
+        reload();
     });
 });
 
