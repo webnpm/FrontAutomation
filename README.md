@@ -37,6 +37,6 @@ Front Automation 是一款前端自动化框架以及组建
 
 
 #License
-<a href="http://wuzuoyi.com">about me</a><br/>
+<a href="http://www.webnpm.com/">about me</a><br/>
 Copyright (c) 2011-2016 Mr.Z(QQ:953043100)
 
